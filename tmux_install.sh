@@ -31,7 +31,8 @@ cd $TMP_DIR
 #==================
 wget http://invisible-island.net/datafiles/release/ncurses.tar.gz
 tar zxvf ncurses.tar.gz
-cd ncurses
+NCURSES_VER=`find . -maxdepth 1 -type d  | grep ncurses | cut -b 3-`
+cd $NCURSES_VER
 ./configure --prefix=$HOME/bin
 make
 make install
@@ -42,7 +43,8 @@ cd $TMP_DIR
 #==================
 wget https://github.com/tmux/tmux/releases/download/2.1/tmux-2.1.tar.gz
 tar zxvf tmux-2.1.tar.gz
-cd tmux
+TMUX_VER=`find . -maxdepth 1 -type d  | grep tmux | cut -b 3-`
+cd $TMUX_VER
 ./configure --prefix=$HOME/bin CFLAGS="-I$HOME/bin/include -I$HOME/bin/include/ncurses" LDFLAGS="-L$HOME/bin/lib -L$HOME/bin/include/ncurses -L$HOME/bin/include"CPPFLAGS="-I$HOME/bin/include -I$HOME/bin/include/ncurses" LDFLAGS="-static -L$HOME/bin/include -L$HOME/bin/include/ncurses -L$HOME/bin/lib"
 make
 make install
@@ -52,5 +54,10 @@ cd $TMP_DIR
 # clean up
 rm -rf ~/tmp_tmux
 
-echo "tmux is ready for use. Add $HOME/bin into your $PATH"
-echo "tmux -V is to check the version you are using."
+
+echo "============================================================================"
+echo "============================================================================"
+echo "============================================================================"
+echo "tmux is ready for use. Add $HOME/bin into your \$PATH"
+echo "'which tmux' is to check which tmux you are using."
+echo "'tmux -V' is to check the version you are using."
