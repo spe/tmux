@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # this is the script for installation of tmux.
+
+# On ubuntu, there are some tools have to install first.
+# 1. sudo apt-get install automake
+# 2. sudo apt-get install libtool
+
 # new tmux version is based on libevent and ncurses packages.
 # install libevent and ncurses first.
 
@@ -15,6 +20,7 @@ cd $TMP_DIR
 #==================
 git clone https://github.com/libevent/libevent.git
 cd libevent
+sh autogen.sh
 ./configure --prefix=$HOME/bin --disable-shared
 make
 make install
