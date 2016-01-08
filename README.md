@@ -21,8 +21,8 @@ tmux
                      |                  |----------
 ```
 tmux can handle multiple sessions at the same time. When you are trying to use one of session, you have to attach one of sessions. In this session, you can create multiple windows. In current window, you can create multiple pane for display usage. Below picture is a example for usage.
-![tmux_intro](https://npusgithub.emrsn.org/github-enterprise-assets/0000/0189/0000/0450/897ba756-780c-11e5-8d9b-142a0d9ab8a3.png)
-In this example, session name is 13g. There are three windows in this sessions. Window_0 is build. Window_1 is code. Window_2 is test. Current window is window_1, the green one. In window_1, there are three panes.
+![tmux_intro](https://tmux_intro.png)
+In this example, session name is rpi. There are three windows in this sessions. Window_0 is build. Window_1 is code. Window_2 is test. Current window is window_1, the green one. In window_1, there are three panes.
 
 ## Config file
 tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME directory.
