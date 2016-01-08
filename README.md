@@ -34,7 +34,7 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `tmux attach –t SESSION_NAME` : attach SESSION_NAME.
 ( you can use some alias in your .bashrc for general usage)
 
-## Key binding: 
+## Key bindings: 
 
 ### help & general
 * `<Ctrl-a> ?` : list all key bindings.
@@ -42,6 +42,9 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 
 ### Session 
 * `<Ctrl-a> d` : detach current session.
+* `<Ctrl-a> $` : rename session.
+* `<Ctrl-a> )` : switch to next session.
+* `<Ctrl-a> (` : switch to previous session.
 
 ### Window
 * `<Ctrl-a> c` : creat a window.
@@ -50,6 +53,7 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a-a>` : switch to the previous window.
 * `<Ctrl-a-w>` : list all window and switch to the window you select.
 * `<Ctrl-a> &` : delete the current window.
+* `<Ctrl-a> z` : zoom in/out the current window.
 
 ### Pane
 * `<Ctrl-a> |` : split a window into two vertical pane.
