@@ -64,3 +64,10 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a> l` : goto right pane.
 * `<Ctrl-a> -` : reduce the height of pane.
 * `<Ctrl-a> +` : increase the height of pane. 
+
+### copy, paste
+* `<Ctrl-a> ESC` : enter copy-mode-vi mode
+* `Space`        : begin selection
+* `Enter`        : Copy
+* `ESC`          : exit copy-mode-vi mode
+* `<Ctrl-a> ]`   : paste
