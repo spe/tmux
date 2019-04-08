@@ -54,6 +54,7 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a-w>` : list all window and switch to the window you select.
 * `<Ctrl-a> &` : delete the current window.
 * `<Ctrl-a> z` : zoom in/out the current window.
+* `<Ctrl-a> :` => `swap-window -s NUM1` : swap current window to NUM1 window
 
 ### Pane
 * `<Ctrl-a> |` : split a window into two vertical pane.
