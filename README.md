@@ -58,6 +58,7 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a> :` => `swap-window -t -1` : move current window to the left by one position
 * `<Ctrl-a> :` => `swap-window -t +1` : move current window to the right by one position
 * `<Ctrl-a> :` => `swap-window -s NUM1 -t NUM2` : swap source window NUM1 to destination window NUM2
+* `<Ctrl-a> :` => `move-pane -t SESSION:WINDOW ` : move the current window to WINDOW of SESSION
 
 ### Pane
 * `<Ctrl-a> |` : split a window into two vertical pane.
