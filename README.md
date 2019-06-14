@@ -45,6 +45,7 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a> $` : rename session.
 * `<Ctrl-a> )` : switch to next session.
 * `<Ctrl-a> (` : switch to previous session.
+* `<Ctrl-a> L` : switch to last session.
 
 ### Window
 * `<Ctrl-a> c` : creat a window.
@@ -69,6 +70,7 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a> l` : goto right pane.
 * `<Ctrl-a> -` : resize the current pane down 1 line.
 * `<Ctrl-a> +` : resize the current pane up 1 line.
+
 * `<Ctrl-a> M-Up` : resize the current pane up 5 lines. (Repeatly)
 * `<Ctrl-a> M-Down` : resize the current pane down 5 lines. (Repeatly)
 * `<Ctrl-a> M-Left` : resize the current pane left 5 lines. (Repeatly)
