@@ -67,8 +67,12 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a> k` : goto lower pane.
 * `<Ctrl-a> h` : goto left pane.
 * `<Ctrl-a> l` : goto right pane.
-* `<Ctrl-a> -` : reduce the height of pane.
-* `<Ctrl-a> +` : increase the height of pane. 
+* `<Ctrl-a> -` : resize the current pane down 1 line.
+* `<Ctrl-a> +` : resize the current pane up 1 line.
+* `<Ctrl-a> M-Up` : resize the current pane up 5 lines. (Repeatly)
+* `<Ctrl-a> M-Down` : resize the current pane down 5 lines. (Repeatly)
+* `<Ctrl-a> M-Left` : resize the current pane left 5 lines. (Repeatly)
+* `<Ctrl-a> M-Right` : resize the current pane right 5 lines. (Repeatly)
 
 ### copy, paste
 * `<Ctrl-a> ESC` : enter copy-mode-vi mode
