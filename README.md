@@ -55,11 +55,11 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a-w>` : list all window and switch to the window you select.
 * `<Ctrl-a> &` : delete the current window.
 * `<Ctrl-a> z` : zoom in/out the current window.
-* `<Ctrl-a> :` => `swap-window -s NUM1` : swap current window to NUM1 window
-* `<Ctrl-a> :` => `swap-window -t -1` : move current window to the left by one position
-* `<Ctrl-a> :` => `swap-window -t +1` : move current window to the right by one position
-* `<Ctrl-a> :` => `swap-window -s NUM1 -t NUM2` : swap source window NUM1 to destination window NUM2
-* `<Ctrl-a> :` => `move-pane -t SESSION:WINDOW ` : move the current window to WINDOW of SESSION
+* `<Ctrl-a> :` => `swap-window -s NUM1` : swap current window to NUM1 window.
+* `<Ctrl-a> :` => `swap-window -t -1` : move current window to the left by one position.
+* `<Ctrl-a> :` => `swap-window -t +1` : move current window to the right by one position.
+* `<Ctrl-a> :` => `swap-window -s NUM1 -t NUM2` : swap source window NUM1 to destination window NUM2.
+* `<Ctrl-a> :` => `move-pane -t SESSION:WINDOW ` : move the current window to WINDOW of SESSION.
 
 ### Pane
 * `<Ctrl-a> |` : split a window into two vertical pane.
@@ -76,9 +76,12 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 * `<Ctrl-a> M-Left` : resize the current pane left 5 lines. (Repeatly)
 * `<Ctrl-a> M-Right` : resize the current pane right 5 lines. (Repeatly)
 
+* `<Ctrl-a> :` => `join-pane -t WINDOW_NAME` : move this pane and joint to WINDOW_NAME.
+* `<Ctrl-a> !` : move this pane to a new window.
+
 ### copy, paste
-* `<Ctrl-a> ESC` : enter copy-mode-vi mode
-* `Space`        : begin selection
-* `Enter`        : Copy
-* `ESC`          : exit copy-mode-vi mode
-* `<Ctrl-a> ]`   : paste
+* `<Ctrl-a> ESC` : enter copy-mode-vi mode.
+* `Space`        : begin selection.
+* `Enter`        : Copy.
+* `ESC`          : exit copy-mode-vi mode.
+* `<Ctrl-a> ]`   : paste.
