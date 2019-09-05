@@ -78,6 +78,8 @@ tmux/.tmux.conf is the config file I am using. Place `.tmux.conf` under $HOME di
 
 * `<Ctrl-a> :` => `join-pane -t WINDOW_NAME` : move this pane and joint to WINDOW_NAME.
 * `<Ctrl-a> !` : move this pane to a new window.
+* `<Ctrl-a> {` : swap this pane to left pane.
+* `<Ctrl-a> }` : swap this pane to right pane.
 
 ### copy, paste
 * `<Ctrl-a> ESC` : enter copy-mode-vi mode.
